@@ -1,0 +1,155 @@
+body {
+    background-image: url('image/contact.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+
+.search_cont {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search_cont form {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.search_cont input[type="text"],
+.search_cont input[type="number"],
+.search_cont input[type="submit"],
+.search_cont select {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.products_cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pro_box_cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pro_box {
+    background-color: rgba(40, 40, 40, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.pro_box img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.product_btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product_btn:hover {
+    background-color: #45a049;
+}
+
+
+.autocomplete-suggestions {
+    border: 1px solid #ccc;
+    background-color: rgba(128, 128, 128, 0.7);
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.autocomplete-suggestion {
+    padding: 8px;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.autocomplete-suggestion img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.autocomplete-suggestion:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.popup-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(34, 139, 34, 0.95);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.popup-message.error {
+    background-color: rgba(200, 50, 50, 0.95);
+}
+
+.popup-message .close-btn {
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.popup-message .close-btn {
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 0 8px;
+}

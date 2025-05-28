@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.borderline {
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+
+.box form {
+    position: relative;
+    width: 100%;
+}
+
+.box form h2 {
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box form .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.box form .inputbox input {
+    width: 100%;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.box form .inputbox span {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.box form .inputbox .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.box form input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 25px;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.box form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.box form .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.box form .links a {
+    font-size: 0.9rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.box form .links a:hover {
+    color: #007bff;
+}
